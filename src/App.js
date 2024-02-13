@@ -66,7 +66,7 @@ function App() {
 
     return (
         <div style={{ height: '100vh', width: '100vw' }}>
-            <MapContainer center={position} zoom={5} style={{ height: '100%', width: '100%', backgroundColor: '#d3d3d3' }}>
+            <MapContainer center={position} zoom={7} style={{ height: '100%', width: '100%', backgroundColor: '#d3d3d3' }}>
                 {Object.entries(zones).map(([key, zone]) => (
                     <React.Fragment key={key}>
                         {createShape(zone, key)}
